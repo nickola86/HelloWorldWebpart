@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
         }
       ]
+    },
+    "identity-card-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/identityCard/IdentityCardWebPart.js",
+          "manifest": "./src/webparts/identityCard/IdentityCardWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js"
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "IdentityCardWebPartStrings": "lib/webparts/identityCard/loc/{locale}.js"
   }
 }
