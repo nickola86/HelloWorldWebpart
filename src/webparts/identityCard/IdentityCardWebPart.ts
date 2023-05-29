@@ -36,17 +36,17 @@ export default class IdentityCardWebPart extends BaseClientSideWebPart<IIdentity
         <div class="${styles.data}">
           <ul>
             <li>
-              <span class="${styles.text} ${styles.bold}">${escape(this.properties.cognome)} ${escape(this.properties.nome)}</span>
+              <span class="${styles.bold}">${escape(this.properties.cognome)} ${escape(this.properties.nome)}</span>
             </li>
             <hr/>
             <li>
-              <span class="${styles.text}">${strings.LuogoDiNascitaFieldLabel}: ${escape(this.properties.luogoDiNascita)}</span>
+              <span class="${styles.bold}">${strings.LuogoDiNascitaFieldLabel}:</span> <span>${escape(this.properties.luogoDiNascita)}</span>
             </li>
             <li>
-              <span class="${styles.text}">${strings.GenereFieldLabel}: ${escape(this.properties.genere)}</span>
+              <span class="${styles.bold}">${strings.GenereFieldLabel}:</span> <span>${escape(this.properties.genere)}</span>
             </li>
             <li>
-              <span class="${styles.text}">${strings.DataDiNascitaFieldLabel}: ${escape(this.properties.dataDiNascita)}</span>
+              <span class="${styles.bold}">${strings.DataDiNascitaFieldLabel}:</span> <span>${escape(this.properties.dataDiNascita)}</span>
             </li>
           </ul>
         </div>
